@@ -405,6 +405,7 @@ public class TestA extends Test {
         x2s("((?i:az))\\1", "AzAz", 0, 4);
         ns("((?i:az))\\1", "Azaz");
         x2s("(?<=a)b", "ab", 1, 2);
+        x2s("(?<=a).*b","aab", 1, 3);
         ns("(?<=a)b", "bb");
         x2s("(?<=a|b)b", "bb", 1, 2);
         x2s("(?<=a|bc)b", "bcb", 2, 3);
