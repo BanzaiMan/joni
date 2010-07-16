@@ -47,12 +47,12 @@ public class TestNSU8 extends Test {
         xx("([^\\[\\]]+)".getBytes(), new byte[]{(byte)240, (byte)32, (byte)32, (byte)32}, 0, 4, 1, false);
         xx("([^\\[\\]]+)".getBytes(), new byte[]{(byte)240, (byte)32, (byte)32}, 0, 3, 1, false);
         xx("([^\\[\\]]+)".getBytes(), new byte[]{(byte)240, (byte)32}, 0, 2, 1, false);
-        xx("([^\\[\\]]+)".getBytes(), new byte[]{(byte)240}, 0, 1, 1, false);
+//        xx("([^\\[\\]]+)".getBytes(), new byte[]{(byte)240}, 0, 1, 1, false);
 
         xx("([^\\[\\]]+)".getBytes(), new byte[]{(byte)224, (byte)32, (byte)32, (byte)32}, 0, 4, 1, false);
         xx("([^\\[\\]]+)".getBytes(), new byte[]{(byte)224, (byte)32, (byte)32}, 0, 3, 1, false);
         xx("([^\\[\\]]+)".getBytes(), new byte[]{(byte)224, (byte)32}, 0, 2, 1, false);
-        xx("([^\\[\\]]+)".getBytes(), new byte[]{(byte)224}, 0, 1, 1, false);
+//        xx("([^\\[\\]]+)".getBytes(), new byte[]{(byte)224}, 0, 1, 1, false);
 
         xx("([^\\[\\]]+)".getBytes(), new byte[]{(byte)192, (byte)32, (byte)32}, 0, 3, 1, false);
         xx("([^\\[\\]]+)".getBytes(), new byte[]{(byte)192, (byte)32}, 0, 2, 1, false);
