@@ -280,6 +280,9 @@ public class TestC extends Test {
         x2s("(?:a*|b*)(?:a*|b*)", "aaabbb", 0, 3);
         x2s("(?:a*|b*)(?:a+|b+)", "aaabbb", 0, 6);
         x2s("(?:a+|b+){2}", "aaabbb", 0, 6);
+        ns("(\\d\\s*){2,}","1 ");
+        x2s("(\\d\\s*){2,}", "12 ", 0, 3);
+        x2s("(\\d\\s*?){2,}", "12 ", 0, 2);
         x2s("h{0,}", "hhhh", 0, 4);
         x2s("(?:a+|b+){1,2}", "aaabbb", 0, 6);
         ns("ax{2}*a", "0axxxa1");
